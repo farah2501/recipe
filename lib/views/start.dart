@@ -1,4 +1,4 @@
-
+// start.dart
 import 'package:flutter/material.dart';
 import 'home.dart';
 
@@ -24,7 +24,7 @@ class StartPage extends StatelessWidget {
             onPressed: () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => HomePage()), // Navigate to HomePage
+                MaterialPageRoute(builder: (context) => HomePage()),
               );
             },
             child: Text('Start'),
