@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Food recipe',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
         primaryColor: Colors.white,
         textTheme: TextTheme(
           bodyText2: TextStyle(color: Colors.white),
