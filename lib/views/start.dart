@@ -33,39 +33,39 @@ class StartPage extends StatelessWidget {
               fit: BoxFit.fitHeight,  
             ),
             SizedBox(height: 20),
-            Container(
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.orange, // Set the border color
-                     width: 2.0, // Set the border width
-                   ),
-                    borderRadius: BorderRadius.circular(8.0), // Set border radius as needed
-         ),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
+            Text(
               'Welcome to',
-              style: TextStyle(fontSize: 24, color: Colors.orange, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.orange,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.2, // Add some letter spacing for better readability
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    blurRadius: 2,
+                    offset: Offset(1, 1),
+                    ),
+                  ],
               ),
-          ),
             ),
-          SizedBox(height: 3), // Add some spacing between the two Text widgets
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.orange, // Set the border color
-                width: 2.0, // Set the border width
+            SizedBox(height: 8), // Add some spacing between the two Text widgets
+            Text(
+              'Nom Nom!',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.orange,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.5, // Add some letter spacing for better readability
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    blurRadius: 3,
+                    offset: Offset(1, 1),
+                  ),
+               ],
               ),
-              borderRadius: BorderRadius.circular(8.0), // Set border radius as needed
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Nom Nom!',
-                 style: TextStyle(fontSize: 30, color: Colors.orange, fontWeight: FontWeight.bold),
-             ),
-            ),
-          ),
             SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(16.0),
