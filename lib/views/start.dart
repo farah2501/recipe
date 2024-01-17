@@ -8,7 +8,7 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 239, 232, 223), // Set the overall background color to orange
+        backgroundColor: Color.fromARGB(255, 239, 232, 223),
         appBar: AppBar(
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -25,14 +25,21 @@ class StartPage extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 20), // Adjusted the height to move the text higher
+            // Add the image widget here
+            Image.asset(
+              'images/Chef.png', // Replace 'your_image.png' with the actual path to your image asset
+              height: 410, // Adjust the height of the image as needed
+              width: double.infinity, // Make the image take the full width of the screen
+              fit: BoxFit.cover, // Adjust the BoxFit property based on your image requirements
+            ),
+            SizedBox(height: 20),
             Text(
               'Welcome to',
-              style: TextStyle(fontSize: 24, color: Colors.black),
+              style: TextStyle(fontSize: 24, color: Colors.orange, fontWeight: FontWeight.bold),
             ),
             Text(
               'Nom Nom!',
-              style: TextStyle(fontSize: 30, color: Colors.orange, fontWeight: FontWeight.bold), // Adjusted text color to white
+              style: TextStyle(fontSize: 30, color: Colors.orange, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
             Padding(
@@ -43,7 +50,7 @@ class StartPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
