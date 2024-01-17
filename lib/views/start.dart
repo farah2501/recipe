@@ -27,20 +27,45 @@ class StartPage extends StatelessWidget {
           children: [
             // Add the image widget here
             Image.asset(
-              'images/Chef.png', // Replace 'your_image.png' with the actual path to your image asset
-              height: 410, // Adjust the height of the image as needed
-              width: double.infinity, // Make the image take the full width of the screen
-              fit: BoxFit.cover, // Adjust the BoxFit property based on your image requirements
+              'images/Chef.png', 
+              height: 350, 
+              width: double.infinity,  
+              fit: BoxFit.fitHeight,  
             ),
             SizedBox(height: 20),
-            Text(
+            Container(
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.orange, // Set the border color
+                     width: 2.0, // Set the border width
+                   ),
+                    borderRadius: BorderRadius.circular(8.0), // Set border radius as needed
+         ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
               'Welcome to',
               style: TextStyle(fontSize: 24, color: Colors.orange, fontWeight: FontWeight.bold),
+              ),
+          ),
             ),
-            Text(
-              'Nom Nom!',
-              style: TextStyle(fontSize: 30, color: Colors.orange, fontWeight: FontWeight.bold),
+          SizedBox(height: 3), // Add some spacing between the two Text widgets
+          Container(
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.orange, // Set the border color
+                width: 2.0, // Set the border width
+              ),
+              borderRadius: BorderRadius.circular(8.0), // Set border radius as needed
             ),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Nom Nom!',
+                 style: TextStyle(fontSize: 30, color: Colors.orange, fontWeight: FontWeight.bold),
+             ),
+            ),
+          ),
             SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(16.0),
